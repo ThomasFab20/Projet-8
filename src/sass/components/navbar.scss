@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    gap: 50px;
+
+    a{
+        text-decoration: none;
+        color: #FF6060;
+        font-size: 1.2em;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

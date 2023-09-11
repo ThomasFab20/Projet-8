@@ -1,10 +1,16 @@
 import './App.css';
+import Router from './components/Router';
 import Header from './components/Header';
-import { computeHeadingLevel } from '@testing-library/react';
+import Footer from './components/Footer';
+import './sass/main.css';
 
 function App() {
   return (
-    <Header />
+    <div id="router">
+      <Header />
+      <Router />
+      <Footer />
+    </div>
   );
 }
 

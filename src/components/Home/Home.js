@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HomeBanner from './Banner';
+import Gallery from './Gallery';
 
 export default function Home() {
     return (
-    <div>
-        <h1>Bienvenue sur la page d'accueil</h1>
+    <div className='home_body'>
+        <HomeBanner />
+        <Gallery />
     </div>
 )
 }

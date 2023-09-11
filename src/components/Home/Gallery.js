@@ -1,0 +1,15 @@
+import React from 'react'
+
+export default function Gallery() {
+    return (
+    <div className='gallery'>
+        <div className='card'></div>
+        <div className='card'></div>
+        <div className='card'></div>
+        <div className='card'></div>
+        <div className='card'></div>
+        <div className='card'></div>
+    </div>
+)
+}
+
