@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import AboutBanner from './Banner';
+import Collapse from './Collapse';
 
 export default function About() {
     return (
     <div>
-        <h1>Bienvenue sur la page "A propos"</h1>
+        <AboutBanner />
+        <Collapse />
     </div>
 )
 }

@@ -1,0 +1,11 @@
+.about_banner {
+  margin: 50px 100px;
+}
+.about_banner img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 220px;
+  filter: brightness(70%);
+}/*# sourceMappingURL=about_banner.css.map */
