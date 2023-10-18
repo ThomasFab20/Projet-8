@@ -1,3 +1,12 @@
 * {
   font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 1.2em;
+}
+a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+.infos {
+  margin: 0 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #FF6060;
+  font-size: 18px;
+}
+.infos .infos_left_content .title {
+  display: flex;
+  flex-direction: column;
+}
+.infos .infos_left_content .title h2 {
+  font-size: 36px;
+  margin: 0;
+}
+.infos .infos_left_content .tags {
+  display: flex;
+  gap: 10px;
+}
+.infos .infos_left_content .tags p {
+  color: white;
+  border-radius: 10px;
+  background-color: #FF6060;
+  padding: 5px 40px;
+  font-size: 14px;
+}
+.infos .infos_right_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.infos .infos_right_content .infos_host {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+.infos .infos_right_content .host_name {
+  display: flex;
+  align-items: flex-end;
+}
+.infos .infos_right_content .host_name p {
+  text-align: end;
+  max-width: 80px;
+  line-height: 25px;
+  margin: 0;
+}
+.infos .infos_right_content .host_picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.infos .infos_right_content .rating {
+  display: flex;
+  justify-content: flex-end;
+}
+.infos .infos_right_content .rating .rating-stars {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=infos.css.map */

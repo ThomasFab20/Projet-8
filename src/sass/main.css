@@ -2,6 +2,15 @@
   font-family: "Montserrat";
 }
 
+a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 1.2em;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -9,17 +18,9 @@
   padding: 40px 100px;
 }
 
-nav {
+.header_navbar {
   display: flex;
   gap: 50px;
-}
-nav a {
-  text-decoration: none;
-  color: #FF6060;
-  font-size: 1.2em;
-}
-nav a:hover {
-  text-decoration: underline;
 }
 
 .home_banner {
@@ -47,23 +48,46 @@ nav a:hover {
 }
 
 .gallery {
+  display: flex;
+  justify-content: center;
   background: #F6F6F6;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 30px 30px;
+  padding: 30px 50px;
   margin: 0 100px 50px;
 }
-.gallery .card {
+.gallery .logements {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.gallery .logements a {
   width: 30%;
   height: 295px;
   border-radius: 5px;
-  background: #FF6060;
   margin: 10px 0;
+  flex-grow: 1;
+}
+.gallery .logements .card_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 295px;
   box-shadow: 1px -49px 50px 1px rgba(0, 0, 0, 0.5) inset;
+  filter: brightness(85%);
+}
+.gallery .logements figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.gallery .logements .logement_title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
 }
 
 .footer {
@@ -115,6 +139,16 @@ nav a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+.container .infos_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  padding: 0 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
 .container .content {
   background-color: #F6F6F6;
   color: #FF6060;
@@ -126,6 +160,192 @@ nav a:hover {
   transition: max-height 0.2s cubic-bezier(1, 0, 1, 0), height 0.2s cubic-bezier(1, 0, 1, 0), padding 0.2s ease-in-out;
 }
 .container .content.show {
+  height: auto;
+  max-height: 9999px;
+  padding: 10px 20px;
+  transition: max-height 0.2s cubic-bezier(1, 0, 1, 0), height 0.2s cubic-bezier(1, 0, 1, 0), padding 0.2s ease-in-out;
+}
+
+.error_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin: 100px 0 150px 0;
+  color: #FF6060;
+}
+.error_content h2 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.error_content p {
+  font-size: 38px;
+}
+
+.slideshow {
+  margin: 0 100px 50px;
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.slideshow .arrows {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.slideshow .arrows .left_arrow {
+  position: absolute;
+  left: 10px;
+}
+.slideshow .arrows .right_arrow {
+  position: absolute;
+  right: 10px;
+}
+.slideshow .slides {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.slideshow .slides .slide {
+  width: 100%;
+  height: 100%;
+}
+.slideshow .slides .slide_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.slideshow .active {
+  opacity: 1;
+}
+
+.infos {
+  margin: 0 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #FF6060;
+  font-size: 18px;
+}
+.infos .infos_left_content .title {
+  display: flex;
+  flex-direction: column;
+}
+.infos .infos_left_content .title h2 {
+  font-size: 36px;
+  margin: 0;
+}
+.infos .infos_left_content .tags {
+  display: flex;
+  gap: 10px;
+}
+.infos .infos_left_content .tags p {
+  color: white;
+  border-radius: 10px;
+  background-color: #FF6060;
+  padding: 5px 40px;
+  font-size: 14px;
+}
+.infos .infos_right_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.infos .infos_right_content .infos_host {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+.infos .infos_right_content .host_name {
+  display: flex;
+  align-items: flex-end;
+}
+.infos .infos_right_content .host_name p {
+  text-align: end;
+  max-width: 80px;
+  line-height: 25px;
+  margin: 0;
+}
+.infos .infos_right_content .host_picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.infos .infos_right_content .rating {
+  display: flex;
+  justify-content: flex-end;
+}
+.infos .infos_right_content .rating .rating-stars {
+  display: flex;
+  gap: 10px;
+}
+
+.infos_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 0 100px 40px;
+}
+.infos_container .collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+.infos_container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.infos_container .infos_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  padding: 0 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.infos_container .content {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.2s cubic-bezier(1, 0, 1, 0), height 0.2s cubic-bezier(1, 0, 1, 0), padding 0.2s ease-in-out;
+}
+.infos_container .content .equipments {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.infos_container .content .equipments p {
+  padding: 0;
+  margin: 0;
+}
+.infos_container .content.show {
   height: auto;
   max-height: 9999px;
   padding: 10px 20px;

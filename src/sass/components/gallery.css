@@ -1,19 +1,42 @@
 .gallery {
+  display: flex;
+  justify-content: center;
   background: #F6F6F6;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 30px 30px;
+  padding: 30px 50px;
   margin: 0 100px 50px;
 }
-.gallery .card {
+.gallery .logements {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.gallery .logements a {
   width: 30%;
   height: 295px;
   border-radius: 5px;
-  background: #FF6060;
   margin: 10px 0;
+  flex-grow: 1;
+}
+.gallery .logements .card_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 295px;
   box-shadow: 1px -49px 50px 1px rgba(0, 0, 0, 0.5) inset;
+  filter: brightness(85%);
+}
+.gallery .logements figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.gallery .logements .logement_title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
 }/*# sourceMappingURL=gallery.css.map */

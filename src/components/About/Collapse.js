@@ -19,7 +19,7 @@ const collapseData = [
     },
     {
         title: "Sécurité",
-        content: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standars sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+        content: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
     }
 ]
 
@@ -28,7 +28,7 @@ export default function Collapse() {
     const [selected, setSelected] = useState(-1)
 
     const toggle = i => {
-        if (selected == i){
+        if (selected === i){
             return setSelected(-1)
         }
 
@@ -44,7 +44,7 @@ export default function Collapse() {
                             <h2>{item.title}</h2>
                             <span>{selected === i ? <FontAwesomeIcon icon={faChevronDown} size="2xl" style={{color: "#ffffff",}} /> : <FontAwesomeIcon icon={faChevronUp} size="2xl" style={{color: "#ffffff",}} />}</span>
                         </div>
-                        <div className={selected == i ? 'content show' : 'content'}>
+                        <div className={selected === i ? 'content show' : 'content'}>
                             {item.content}
                         </div>
                     </div>

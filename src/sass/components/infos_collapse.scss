@@ -1,14 +1,15 @@
-.container{
+.infos_container{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 200px 40px;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 100px 40px;
 
     .collapse{
         display: flex;
         flex-direction: column;
         gap: 30px;
+        width: 50%;
     }
 
     .title{
@@ -46,6 +47,17 @@
             height 0.2s cubic-bezier(1,0,1,0),
             padding 0.2s ease-in-out,
         ;
+
+        .equipments{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p{
+                padding: 0;
+                margin: 0;
+            }
+        }
     }
 
     .content.show{
