@@ -6,6 +6,11 @@
     justify-content: center;
     position: relative;
 
+    @media (max-width: 768px){
+        margin: 20px 20px 20px;
+        height: 255px;
+    }
+
     .arrows{
         display: flex;
         align-items: center;
@@ -14,11 +19,19 @@
         .left_arrow{
             position: absolute;
             left: 10px;
+
+            @media (max-width: 768px){
+                height: 30px;
+            }
         }
 
         .right_arrow{
             position: absolute;
             right: 10px;
+
+            @media (max-width: 768px){
+                height: 30px;
+            }
         }
     }
 

@@ -45,7 +45,18 @@ export default function Infos() {
                                 activeColor='#FF6060'
                                 filledIcon={<FontAwesomeIcon icon={faStar} />}
                                 value={Number(rating)}
-                                classNames='rating-stars'
+                                classNames='rating_stars_desktop'
+                                edit={false}
+                            />
+                            <ReactStars 
+                                count={5}
+                                size={13}
+                                color='#E3E3E3'
+                                emptyIcon={<FontAwesomeIcon icon={faStar} />}
+                                activeColor='#FF6060'
+                                filledIcon={<FontAwesomeIcon icon={faStar} />}
+                                value={Number(rating)}
+                                classNames='rating_stars_mobile'
                                 edit={false}
                             />
                         </div>

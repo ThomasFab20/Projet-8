@@ -6,6 +6,12 @@
   justify-content: center;
   position: relative;
 }
+@media (max-width: 768px) {
+  .slideshow {
+    margin: 20px 20px 20px;
+    height: 255px;
+  }
+}
 .slideshow .arrows {
   display: flex;
   align-items: center;
@@ -15,9 +21,19 @@
   position: absolute;
   left: 10px;
 }
+@media (max-width: 768px) {
+  .slideshow .arrows .left_arrow {
+    height: 30px;
+  }
+}
 .slideshow .arrows .right_arrow {
   position: absolute;
   right: 10px;
+}
+@media (max-width: 768px) {
+  .slideshow .arrows .right_arrow {
+    height: 30px;
+  }
 }
 .slideshow .slides {
   display: flex;

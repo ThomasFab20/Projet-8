@@ -1,4 +1,15 @@
 .header_navbar{
     display: flex;
     gap: 50px;
+
+    @media (max-width: 768px){
+        gap: 25px;
+        font-size: 12px;
+    }
+
+    a{
+        @media (max-width: 768px){
+            text-transform: uppercase;
+        }
+    }
 }

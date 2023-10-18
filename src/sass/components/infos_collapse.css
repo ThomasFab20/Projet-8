@@ -1,9 +1,15 @@
 .infos_container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 100px;
   margin: 0 100px 40px;
+}
+@media (max-width: 768px) {
+  .infos_container {
+    margin: 0 20px 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .infos_container .collapse {
   display: flex;
@@ -11,15 +17,10 @@
   gap: 30px;
   width: 50%;
 }
-.infos_container .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FF6060;
-  color: white;
-  padding: 0 15px;
-  border-radius: 5px;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .infos_container .collapse {
+    width: 100%;
+  }
 }
 .infos_container .infos_title {
   display: flex;
@@ -31,28 +32,59 @@
   border-radius: 15px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .infos_container .infos_title {
+    font-size: 13px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
 .infos_container .content {
   background-color: #F6F6F6;
   color: #FF6060;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  max-height: 0;
-  padding: 0;
+  padding: 0 20px;
   overflow: hidden;
-  transition: max-height 0.2s cubic-bezier(1, 0, 1, 0), height 0.2s cubic-bezier(1, 0, 1, 0), padding 0.2s ease-in-out;
+  transition: 400ms;
+  max-height: 0px;
+}
+.infos_container .content .content_description {
+  margin-top: -60px;
+  transition: 400ms;
+}
+@media (max-width: 768px) {
+  .infos_container .content .content_description {
+    font-size: 13px;
+  }
 }
 .infos_container .content .equipments {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-top: -60px;
+  transition: 400ms;
+}
+@media (max-width: 768px) {
+  .infos_container .content .equipments {
+    font-size: 13px;
+  }
 }
 .infos_container .content .equipments p {
   padding: 0;
   margin: 0;
 }
 .infos_container .content.show {
-  height: auto;
-  max-height: 9999px;
-  padding: 10px 20px;
-  transition: max-height 0.2s cubic-bezier(1, 0, 1, 0), height 0.2s cubic-bezier(1, 0, 1, 0), padding 0.2s ease-in-out;
+  max-height: 200px;
+  transition: 400ms;
+}
+.infos_container .content.show .equipments {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 400ms;
+}
+.infos_container .content.show .content_description {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 400ms;
 }/*# sourceMappingURL=infos_collapse.css.map */

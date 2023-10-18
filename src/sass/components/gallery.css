@@ -6,6 +6,15 @@
   padding: 30px 50px;
   margin: 0 100px 50px;
 }
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 0;
+    background-color: white;
+    border-radius: none;
+  }
+}
 .gallery .logements {
   display: flex;
   justify-content: flex-start;
@@ -13,12 +22,22 @@
   gap: 50px;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .gallery .logements {
+    gap: 0px;
+  }
+}
 .gallery .logements a {
   width: 30%;
   height: 295px;
   border-radius: 5px;
   margin: 10px 0;
   flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .gallery .logements a {
+    width: 100%;
+  }
 }
 .gallery .logements .card_img {
   -o-object-fit: cover;

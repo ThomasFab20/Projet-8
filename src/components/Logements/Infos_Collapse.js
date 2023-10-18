@@ -47,7 +47,7 @@ export default function InfosCollapse() {
                                 <span>{selected === i ? <FontAwesomeIcon icon={faChevronDown} size="2xl" style={{color: "#ffffff",}} /> : <FontAwesomeIcon icon={faChevronUp} size="2xl" style={{color: "#ffffff",}} />}</span>
                             </div>
                             <div className={selected === i ? 'content show' : 'content'}>
-                                {logement.description}
+                                <p className='content_description'>{logement.description}</p>
                             </div>
                         </div>
                     </div>

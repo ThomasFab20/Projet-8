@@ -7,11 +7,35 @@
   margin: 100px 0 150px 0;
   color: #FF6060;
 }
+@media (max-width: 768px) {
+  .error_content {
+    margin: 100px 0 50px;
+  }
+}
 .error_content h2 {
   font-size: 288px;
   font-weight: 700;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .error_content h2 {
+    font-size: 96px;
+  }
+}
 .error_content p {
   font-size: 38px;
+}
+@media (max-width: 768px) {
+  .error_content p {
+    font-size: 18px;
+    text-align: center;
+    width: 260px;
+  }
+}
+@media (max-width: 768px) {
+  .error_content a {
+    font-size: 14px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=error_content.css.map */

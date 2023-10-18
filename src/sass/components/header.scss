@@ -3,4 +3,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
+
+    @media (max-width: 768px){
+        padding: 0;
+        padding: 20px 20px;
+    }
+
+    .logo_mobile{
+        display: none;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+
+    .logo_desktop{
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
 }

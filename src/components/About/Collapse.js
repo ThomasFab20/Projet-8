@@ -45,7 +45,7 @@ export default function Collapse() {
                             <span>{selected === i ? <FontAwesomeIcon icon={faChevronDown} size="2xl" style={{color: "#ffffff",}} /> : <FontAwesomeIcon icon={faChevronUp} size="2xl" style={{color: "#ffffff",}} />}</span>
                         </div>
                         <div className={selected === i ? 'content show' : 'content'}>
-                            {item.content}
+                            <p>{item.content}</p>
                         </div>
                     </div>
                 ))}

@@ -5,10 +5,15 @@
     justify-content: center;
     margin: 0 200px 40px;
 
+    @media (max-width: 768px){
+        margin: 0 20px 20px;
+    }
+
     .collapse{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
+        width: 100%;
     }
 
     .title{
@@ -20,17 +25,8 @@
         padding: 0 15px;
         border-radius: 5px;
         cursor: pointer;
-    }
-
-    .infos_title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #FF6060;
-        color: white;
-        padding: 0 15px;
-        border-radius: 15px;
-        cursor: pointer;
+        overflow: hidden;
+        height: 60px;
     }
 
     .content{
@@ -38,24 +34,25 @@
         color: #FF6060;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        max-height: 0;
-        padding: 0;
+        padding: 0 20px;
         overflow: hidden;
-        transition: 
-            max-height 0.2s cubic-bezier(1,0,1,0),
-            height 0.2s cubic-bezier(1,0,1,0),
-            padding 0.2s ease-in-out,
-        ;
+        transition: 400ms;
+        max-height: 0px;
+
+        p{
+            margin-top: -60px;
+            transition: 400ms;
+        }
     }
 
     .content.show{
-        height: auto;
-        max-height: 9999px;
-        padding: 10px 20px;
-        transition: 
-        max-height 0.2s cubic-bezier(1,0,1,0),
-        height 0.2s cubic-bezier(1,0,1,0),
-        padding 0.2s ease-in-out,
-        ;
+        max-height: 200px;
+        transition: 400ms;
+
+        p{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            transition: 400ms;
+        }
     }
 }
