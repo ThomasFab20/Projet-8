@@ -65,6 +65,7 @@ export default function Slideshow() {
                         <div className={currentIndex === i ? 'slides active' : 'slides'} key={i}>
                             <div className='slide'>
                                 <img src={logement} alt='aperçu du logement' className='slide_img'/>
+                                <p className={pictures.length <= 1 ? 'pictures_list off' : 'pictures_list'}>{currentIndex + 1}/{pictures.length}</p>
                             </div>
                         </div>
                     ))}
