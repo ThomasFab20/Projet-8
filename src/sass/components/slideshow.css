@@ -35,6 +35,9 @@
     height: 30px;
   }
 }
+.slideshow .arrows.off {
+  visibility: hidden;
+}
 .slideshow .slides {
   display: flex;
   align-items: center;

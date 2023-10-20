@@ -57,7 +57,7 @@ export default function Slideshow() {
 
             return (
                 <div className='slideshow'>
-                    <div className='arrows'>
+                    <div className={pictures.length <= 1 ? 'arrows off' : 'arrows'}>
                         <img src={LeftArrow} className='left_arrow' onClick={() => previous()} alt='flèche précédente'/>
                         <img src={RightArrow} className='right_arrow' onClick={() => next()} alt='flèche suivante'/>
                     </div>

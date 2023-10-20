@@ -35,6 +35,10 @@
         }
     }
 
+    .arrows.off{
+        visibility: hidden;
+    }
+
     .slides{
         display: flex;
         align-items: center;
